@@ -7,7 +7,7 @@ int main(int argc, char *argv[]){
     QApplication a(argc, argv);
     MainMenu newMainMenu;
 
-
+    // Window spawns at center of screen
     newMainMenu.setGeometry(
         QStyle::alignedRect(
                     Qt::LeftToRight,
