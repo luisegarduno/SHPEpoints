@@ -1,9 +1,19 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include <QFileDialog>
+#include <QMessageBox>
+#include <QDir>
+#include <QDialog>
+#include <QString>
+#include <experimental/filesystem>
 #include <QMainWindow>
 #include <QPixmap>
+#include <string>
 
+using std::string;
+
+
+namespace filesysten = std::experimental::filesystem;
 QT_BEGIN_NAMESPACE
 namespace Ui{
     class MainWindow;
@@ -18,7 +28,10 @@ class MainMenu : public QMainWindow{
         MainMenu(QWidget *parent = nullptr);
         ~MainMenu();
 
-    private:
+private slots:
+        void on_pushButton_clicked();
+
+private:
         Ui::MainWindow *ui;
 };
 

@@ -44,3 +44,20 @@ MainMenu::~MainMenu(){
     delete ui;
 }
 
+
+void MainMenu::on_pushButton_clicked()
+{
+    QString file_name;
+    // opens local file directory, user is able to navigate to select desired folder
+    file_name = QFileDialog::getExistingDirectory(this, "Open Folder", QDir::homePath());
+
+    //Qstring is converted and saved as a standard string
+    string fileName = file_name.toStdString();
+
+    // if no file was selected, display warning message
+    if(fileName == ""){
+        QString noFile = "Nothing was selected:\n";
+        QString tryAgain = "Please select valid path to a folder";
+        QMessageBox::warning(this,"Error",noFile + tryAgain);
+    }
+}

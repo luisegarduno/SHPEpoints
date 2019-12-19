@@ -211,8 +211,8 @@
      <rect>
       <x>40</x>
       <y>200</y>
-      <width>161</width>
-      <height>61</height>
+      <width>205</width>
+      <height>99</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -294,7 +294,7 @@
       <x>40</x>
       <y>270</y>
       <width>160</width>
-      <height>61</height>
+      <height>88</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_7">
@@ -325,12 +325,26 @@
      </item>
     </layout>
    </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>250</y>
+      <width>170</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
    <zorder>backLabel</zorder>
    <zorder>title_Label</zorder>
    <zorder>verticalLayoutWidget</zorder>
    <zorder>verticalLayoutWidget_3</zorder>
    <zorder>picLabel</zorder>
    <zorder>verticalLayoutWidget_7</zorder>
+   <zorder>pushButton</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -338,7 +352,7 @@
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>22</height>
+     <height>39</height>
     </rect>
    </property>
   </widget>
