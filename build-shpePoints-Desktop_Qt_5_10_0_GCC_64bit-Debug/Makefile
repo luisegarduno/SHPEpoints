@@ -35,7 +35,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = shpePoints1.0.0
-DISTDIR = /home/student/Desktop/WinterProject/SHPEpoints/build-shpePoints-Desktop_Qt_5_10_0_GCC_64bit-Debug/.tmp/shpePoints1.0.0
+DISTDIR = /home/student/Desktop/projects/SHPEpoints/build-shpePoints-Desktop_Qt_5_10_0_GCC_64bit-Debug/.tmp/shpePoints1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-rpath,/home/student/Qt/5.10.0/gcc_64/lib
 LIBS          = $(SUBLIBS) -L/home/student/Qt/5.10.0/gcc_64/lib -lQt5Widgets -lQt5Gui -lQt5Core -lGL -lpthread 
@@ -218,6 +218,7 @@ DIST          = ../../../../Qt/5.10.0/gcc_64/mkspecs/features/spec_pre.prf \
 		../../../../Qt/5.10.0/gcc_64/mkspecs/features/qt_config.prf \
 		../../../../Qt/5.10.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../../Qt/5.10.0/gcc_64/mkspecs/features/spec_post.prf \
+		../shpePoints/.qmake.stash \
 		../../../../Qt/5.10.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt/5.10.0/gcc_64/mkspecs/features/toolchain.prf \
 		../../../../Qt/5.10.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -413,6 +414,7 @@ Makefile: ../shpePoints/shpePoints.pro ../../../../Qt/5.10.0/gcc_64/mkspecs/linu
 		../../../../Qt/5.10.0/gcc_64/mkspecs/features/qt_config.prf \
 		../../../../Qt/5.10.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../../Qt/5.10.0/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../Qt/5.10.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt/5.10.0/gcc_64/mkspecs/features/toolchain.prf \
 		../../../../Qt/5.10.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -600,6 +602,7 @@ Makefile: ../shpePoints/shpePoints.pro ../../../../Qt/5.10.0/gcc_64/mkspecs/linu
 ../../../../Qt/5.10.0/gcc_64/mkspecs/features/qt_config.prf:
 ../../../../Qt/5.10.0/gcc_64/mkspecs/linux-g++/qmake.conf:
 ../../../../Qt/5.10.0/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../Qt/5.10.0/gcc_64/mkspecs/features/exclusive_builds.prf:
 ../../../../Qt/5.10.0/gcc_64/mkspecs/features/toolchain.prf:
 ../../../../Qt/5.10.0/gcc_64/mkspecs/features/default_pre.prf:
@@ -784,7 +787,7 @@ moc_mainwindow.cpp: ../../../../Qt/5.10.0/gcc_64/include/QtWidgets/QMainWindow \
 		../shpePoints/mainwindow.h \
 		moc_predefs.h \
 		../../../../Qt/5.10.0/gcc_64/bin/moc
-	/home/student/Qt/5.10.0/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/student/Qt/5.10.0/gcc_64/mkspecs/linux-g++ -I/home/student/Desktop/WinterProject/SHPEpoints/shpePoints -I/home/student/Qt/5.10.0/gcc_64/include -I/home/student/Qt/5.10.0/gcc_64/include/QtWidgets -I/home/student/Qt/5.10.0/gcc_64/include/QtGui -I/home/student/Qt/5.10.0/gcc_64/include/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../shpePoints/mainwindow.h -o moc_mainwindow.cpp
+	/home/student/Qt/5.10.0/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/student/Qt/5.10.0/gcc_64/mkspecs/linux-g++ -I/home/student/Desktop/projects/SHPEpoints/shpePoints -I/home/student/Qt/5.10.0/gcc_64/include -I/home/student/Qt/5.10.0/gcc_64/include/QtWidgets -I/home/student/Qt/5.10.0/gcc_64/include/QtGui -I/home/student/Qt/5.10.0/gcc_64/include/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../shpePoints/mainwindow.h -o moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -1030,7 +1033,43 @@ mainwindow.o: ../shpePoints/mainwindow.cpp ../shpePoints/mainwindow.h \
 		../../../../Qt/5.10.0/gcc_64/include/QtGui/qtouchdevice.h \
 		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qtabwidget.h \
 		../../../../Qt/5.10.0/gcc_64/include/QtGui/qicon.h \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtCore/QVariant \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/QAction \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qaction.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qactiongroup.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/QApplication \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtCore/qeventloop.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtGui/qguiapplication.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtGui/qinputmethod.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/QButtonGroup \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qbuttongroup.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/QHeaderView \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qheaderview.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qframe.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtGui/qvalidator.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtCore/qregularexpression.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qslider.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qrubberband.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/QMenuBar \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qmenubar.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qmenu.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/QStatusBar \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/qstatusbar.h \
+		../../../../Qt/5.10.0/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../shpePoints/mainwindow.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
