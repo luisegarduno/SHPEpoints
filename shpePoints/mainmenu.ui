@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Society Of Hispanic Professional Engineers</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="title_Label">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>-10</y>
+      <width>300</width>
+      <height>125</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>300</width>
+      <height>125</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>300</width>
+      <height>125</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>23</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>TAMU SHPE Points</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>100</y>
+      <width>160</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+        <widget class="QComboBox" name="eventSelection_comboBox">
+         <property name="minimumSize">
+          <size>
+           <width>140</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>140</width>
+           <height>30</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>Select Event</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Committee Meeting</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Executive Board Meeting</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>General Meeting</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Intramural Event</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>MentorSHPE</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Social Event</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Social Media</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Study Hours</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Volunteering</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Workshop</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Other...</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+          <widget class="QComboBox" name="shpePillar_comboBox">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>30</height>
+            </size>
+           </property>
+           <item>
+            <property name="text">
+             <string>SHPE Pillar</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Service &amp; Outreach</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Chapter Development</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Academic Development</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Leadership Development</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Professional Development</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>200</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+        <widget class="QLabel" name="date_Label">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <italic>true</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Date Of Event:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QDateEdit" name="dateInput_Edit">
+             <property name="dateTime">
+              <datetime>
+               <hour>0</hour>
+               <minute>0</minute>
+               <second>0</second>
+               <year>2020</year>
+               <month>8</month>
+               <day>1</day>
+              </datetime>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="picLabel">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>80</y>
+      <width>271</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="backLabel">
+    <property name="geometry">
+     <rect>
+      <x>-260</x>
+      <y>-550</y>
+      <width>1600</width>
+      <height>1600</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_7">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>270</y>
+      <width>160</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_7">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+          <widget class="QLabel" name="user_label">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <italic>true</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Username:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <zorder>backLabel</zorder>
+   <zorder>title_Label</zorder>
+   <zorder>verticalLayoutWidget</zorder>
+   <zorder>verticalLayoutWidget_3</zorder>
+   <zorder>picLabel</zorder>
+   <zorder>verticalLayoutWidget_7</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
