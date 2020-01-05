@@ -45,11 +45,11 @@ volunteering::volunteering(QWidget *parent) :QDialog(parent),ui(new Ui::voluntee
     pointLabel.setColor(ui->point_sheet_label->foregroundRole(), Qt::white);
     ui->point_sheet_label->setPalette(pointLabel);
 
-
-
-
-
-
+    // Adds white color to event name label
+    QPalette eventLabel = ui->event_name_label->palette();
+    eventLabel.setColor(ui->event_name_label->backgroundRole(), Qt::white);
+    eventLabel.setColor(ui->event_name_label->foregroundRole(), Qt::white);
+    ui->event_name_label->setPalette(eventLabel);
 
 
 }
