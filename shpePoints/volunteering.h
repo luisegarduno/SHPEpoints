@@ -1,5 +1,5 @@
-#ifndef STUDY_HOURS_H
-#define STUDY_HOURS_H
+#ifndef VOLUNTEERING_H
+#define VOLUNTEERING_H
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QDir>
@@ -16,28 +16,26 @@
 using std::string;
 
 namespace Ui {
-class study_hours;
+class volunteering;
 }
 
-class study_hours : public QDialog
+class volunteering : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit study_hours(QWidget *parent = nullptr);
-    ~study_hours();
+    explicit volunteering(QWidget *parent = nullptr);
+    ~volunteering();
 
 private slots:
-    void on_time_out_upload_clicked();
-
-    void on_time_in_upload_clicked();
+    void on_name_sheet_upload_clicked();
 
     void on_point_sheet_upload_clicked();
 
-    void on_next_button_clicked();
+    void on_pushButton_clicked();
 
 private:
-    Ui::study_hours *ui;
+    Ui::volunteering *ui;
 };
 
-#endif // STUDY_HOURS_H
+#endif // VOLUNTEERING_H

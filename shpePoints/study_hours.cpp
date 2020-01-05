@@ -100,3 +100,8 @@ void study_hours::on_point_sheet_upload_clicked()
         QMessageBox::warning(this,"Error",noFile + tryAgain);
         }
 }
+
+void study_hours::on_next_button_clicked()
+{
+
+}

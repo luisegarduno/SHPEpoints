@@ -19,17 +19,20 @@ SOURCES += \
     general_meeting.cpp \
     main.cpp \
     mainmenu.cpp \
-    study_hours.cpp
+    study_hours.cpp \
+    volunteering.cpp
 
 HEADERS += \
     general_meeting.h \
     mainmenu.h \
-    study_hours.h
+    study_hours.h \
+    volunteering.h
 
 FORMS += \
     general_meeting.ui \
     mainmenu.ui \
-    study_hours.ui
+    study_hours.ui \
+    volunteering.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

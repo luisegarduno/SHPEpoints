@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>study_hours</class>
- <widget class="QDialog" name="study_hours">
+ <class>volunteering</class>
+ <widget class="QDialog" name="volunteering">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -25,13 +25,13 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="study_hours_title">
+  <widget class="QLabel" name="volunteering_title">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>10</y>
-     <width>311</width>
-     <height>61</height>
+     <x>200</x>
+     <y>20</y>
+     <width>331</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="font">
@@ -42,21 +42,21 @@
     </font>
    </property>
    <property name="text">
-    <string>Study Hours Points</string>
+    <string>Volunteering</string>
    </property>
   </widget>
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>130</y>
+     <y>120</y>
      <width>160</width>
      <height>80</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-     <widget class="QLabel" name="time_in_label">
+     <widget class="QLabel" name="per_hour_label">
       <property name="font">
        <font>
         <pointsize>10</pointsize>
@@ -65,18 +65,14 @@
        </font>
       </property>
       <property name="text">
-       <string>Time in:</string>
+       <string>Points Per Hour:</string>
       </property>
      </widget>
     </item>
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
-       <widget class="QPushButton" name="time_in_upload">
-        <property name="text">
-         <string>File</string>
-        </property>
-       </widget>
+       <widget class="QSpinBox" name="spinBox"/>
       </item>
      </layout>
     </item>
@@ -86,14 +82,14 @@
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>240</y>
+     <y>250</y>
      <width>160</width>
      <height>80</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_3">
     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-     <widget class="QLabel" name="time_out_label">
+     <widget class="QLabel" name="num_hours_label">
       <property name="font">
        <font>
         <pointsize>10</pointsize>
@@ -102,14 +98,47 @@
        </font>
       </property>
       <property name="text">
-       <string>Time out:</string>
+       <string>Number of Hours:</string>
       </property>
      </widget>
     </item>
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
-       <widget class="QPushButton" name="time_out_upload">
+       <widget class="QSpinBox" name="spinBox_2"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>120</y>
+     <width>160</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+     <widget class="QLabel" name="name_sheet_label">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Name Sheet:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <item>
+       <widget class="QPushButton" name="name_sheet_upload">
         <property name="text">
          <string>File</string>
         </property>
@@ -119,16 +148,16 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="verticalLayoutWidget_4">
+  <widget class="QWidget" name="verticalLayoutWidget_6">
    <property name="geometry">
     <rect>
-     <x>330</x>
-     <y>190</y>
-     <width>181</width>
+     <x>340</x>
+     <y>250</y>
+     <width>160</width>
      <height>80</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout_5">
+   <layout class="QVBoxLayout" name="verticalLayout_7">
     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
      <widget class="QLabel" name="point_sheet_label">
       <property name="font">
@@ -139,12 +168,12 @@
        </font>
       </property>
       <property name="text">
-       <string>Latest Point Sheet:</string>
+       <string>Point Sheet:</string>
       </property>
      </widget>
     </item>
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout_6">
+     <layout class="QVBoxLayout" name="verticalLayout_8">
       <item>
        <widget class="QPushButton" name="point_sheet_upload">
         <property name="text">
@@ -156,11 +185,24 @@
     </item>
    </layout>
   </widget>
-  <widget class="QPushButton" name="next_button">
+  <widget class="QLabel" name="backLabel">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>340</y>
+     <x>-430</x>
+     <y>-460</y>
+     <width>2011</width>
+     <height>1241</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>350</y>
      <width>91</width>
      <height>31</height>
     </rect>
@@ -169,25 +211,13 @@
     <string>NEXT</string>
    </property>
   </widget>
-  <widget class="QLabel" name="backLabel">
-   <property name="geometry">
-    <rect>
-     <x>-300</x>
-     <y>-200</y>
-     <width>1311</width>
-     <height>871</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <zorder>backLabel</zorder>
-  <zorder>study_hours_title</zorder>
+  <zorder>volunteering_title</zorder>
   <zorder>verticalLayoutWidget</zorder>
   <zorder>verticalLayoutWidget_3</zorder>
   <zorder>verticalLayoutWidget_4</zorder>
-  <zorder>next_button</zorder>
+  <zorder>verticalLayoutWidget_6</zorder>
+  <zorder>pushButton</zorder>
  </widget>
  <resources/>
  <connections/>

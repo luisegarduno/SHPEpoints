@@ -69,11 +69,11 @@ void MainMenu::on_pushButton_clicked(){
     }
 
 
-    // if statement that shows the General Meeting screen when selected by the combo box
-    else if(optionSelected == "Study Hours"){
+    // if statement that shows the Volunteering screen when selected by the combo box
+    else if(optionSelected == "Volunteering"){
 
         // centers the Study Hours Screen
-        newHours.setGeometry(
+        newVolunteering.setGeometry(
             QStyle::alignedRect(
                         Qt::LeftToRight,
                         Qt::AlignCenter,
@@ -83,7 +83,25 @@ void MainMenu::on_pushButton_clicked(){
         );
 
         //this->hide();
-        newHours.show();
+        newVolunteering.show();
+    }
+
+
+    // if statement that shows the volunteering screen when selected by the combo box
+    else if(optionSelected == "Study Hours"){
+
+        // centers the Study Hours Screen
+        newHours.setGeometry(
+            QStyle::alignedRect(
+                        Qt::LeftToRight,
+                        Qt::AlignCenter,
+                        newMeeting.size(),
+                        qApp->desktop()->availableGeometry()
+                )
+            );
+
+            //this->hide();
+            newHours.show();
     }
 
 

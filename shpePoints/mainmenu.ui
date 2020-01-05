@@ -307,13 +307,13 @@
     <property name="geometry">
      <rect>
       <x>370</x>
-      <y>270</y>
+      <y>290</y>
       <width>170</width>
       <height>48</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>NEXT</string>
     </property>
    </widget>
    <zorder>backLabel</zorder>

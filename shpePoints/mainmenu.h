@@ -3,6 +3,7 @@
 
 #include "general_meeting.h"
 #include "study_hours.h"
+#include "volunteering.h"
 
 using std::string;
 
@@ -29,6 +30,8 @@ private:
         general_meeting newMeeting;
 
         study_hours newHours;
+
+        volunteering newVolunteering;
 
         Ui::MainWindow *ui;
 };
