@@ -146,6 +146,23 @@ void MainMenu::on_pushButton_clicked(){
             newWorkshop.show();
 
     }
+
+    // if statement that shows the workshop screen when selected by the combo box
+    else if(optionSelected == "Social Media"){
+
+        // centers the intramural event Screen
+        newSocial.setGeometry(
+            QStyle::alignedRect(
+                        Qt::LeftToRight,
+                        Qt::AlignCenter,
+                        newSocial.size(),
+                        qApp->desktop()->availableGeometry()
+                )
+            );
+
+            //this->hide();
+            newSocial.show();
+    }
     }
 
 

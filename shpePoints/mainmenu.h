@@ -6,6 +6,7 @@
 #include "volunteering.h"
 #include "intramural_event.h"
 #include "workshop.h"
+#include "social_media.h"
 
 using std::string;
 
@@ -38,6 +39,8 @@ private:
         intramural_event newIntramural;
 
         workshop newWorkshop;
+
+        social_media newSocial;
 
         Ui::MainWindow *ui;
 };

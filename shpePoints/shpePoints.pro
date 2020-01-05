@@ -20,6 +20,7 @@ SOURCES += \
     intramural_event.cpp \
     main.cpp \
     mainmenu.cpp \
+    social_media.cpp \
     study_hours.cpp \
     volunteering.cpp \
     workshop.cpp
@@ -28,6 +29,7 @@ HEADERS += \
     general_meeting.h \
     intramural_event.h \
     mainmenu.h \
+    social_media.h \
     study_hours.h \
     volunteering.h \
     workshop.h
@@ -36,6 +38,7 @@ FORMS += \
     general_meeting.ui \
     intramural_event.ui \
     mainmenu.ui \
+    social_media.ui \
     study_hours.ui \
     volunteering.ui \
     workshop.ui
