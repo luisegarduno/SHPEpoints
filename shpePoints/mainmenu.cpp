@@ -129,6 +129,23 @@ void MainMenu::on_pushButton_clicked(){
 
     }
 
+    // if statement that shows the workshop screen when selected by the combo box
+    else if(optionSelected == "Workshop"){
+
+        // centers the intramural event Screen
+        newWorkshop.setGeometry(
+            QStyle::alignedRect(
+                        Qt::LeftToRight,
+                        Qt::AlignCenter,
+                        newWorkshop.size(),
+                        qApp->desktop()->availableGeometry()
+                )
+            );
+
+            //this->hide();
+            newWorkshop.show();
+
+    }
     }
 
 

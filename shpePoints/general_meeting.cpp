@@ -45,7 +45,7 @@ general_meeting::~general_meeting(){
     delete ui;
 }
 
-// allows user to click on file upload for the general meeting point sheet
+// allows user to click on file upload for the point sheet
 void general_meeting::on_meeting_upload_clicked(){
     QString meeting_upload;
     // opens local file directory, user is able to navigate to select desired folder
@@ -78,9 +78,4 @@ void general_meeting::on_point_sheet_upload_clicked()
         QString tryAgain = "Please select valid path to a folder";
         QMessageBox::warning(this,"Error",noFile + tryAgain);
         }
-}
-
-void general_meeting::on_next_button_clicked()
-{
-
 }

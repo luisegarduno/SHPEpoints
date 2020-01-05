@@ -5,6 +5,7 @@
 #include "study_hours.h"
 #include "volunteering.h"
 #include "intramural_event.h"
+#include "workshop.h"
 
 using std::string;
 
@@ -35,6 +36,8 @@ private:
         volunteering newVolunteering;
 
         intramural_event newIntramural;
+
+        workshop newWorkshop;
 
         Ui::MainWindow *ui;
 };

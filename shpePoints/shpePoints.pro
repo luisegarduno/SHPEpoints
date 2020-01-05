@@ -21,21 +21,24 @@ SOURCES += \
     main.cpp \
     mainmenu.cpp \
     study_hours.cpp \
-    volunteering.cpp
+    volunteering.cpp \
+    workshop.cpp
 
 HEADERS += \
     general_meeting.h \
     intramural_event.h \
     mainmenu.h \
     study_hours.h \
-    volunteering.h
+    volunteering.h \
+    workshop.h
 
 FORMS += \
     general_meeting.ui \
     intramural_event.ui \
     mainmenu.ui \
     study_hours.ui \
-    volunteering.ui
+    volunteering.ui \
+    workshop.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
