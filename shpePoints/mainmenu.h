@@ -7,6 +7,8 @@
 #include "intramural_event.h"
 #include "workshop.h"
 #include "social_media.h"
+#include "other.h"
+#include "executive_meeting.h"
 
 using std::string;
 
@@ -41,6 +43,10 @@ private:
         workshop newWorkshop;
 
         social_media newSocial;
+
+        other newOther;
+
+        executive_meeting newExecutive;
 
         Ui::MainWindow *ui;
 };

@@ -163,6 +163,41 @@ void MainMenu::on_pushButton_clicked(){
             //this->hide();
             newSocial.show();
     }
+
+    // if statement that shows the workshop screen when selected by the combo box
+    else if(optionSelected == "Other..."){
+
+        // centers the intramural event Screen
+        newOther.setGeometry(
+            QStyle::alignedRect(
+                        Qt::LeftToRight,
+                        Qt::AlignCenter,
+                        newOther.size(),
+                        qApp->desktop()->availableGeometry()
+                )
+            );
+
+            //this->hide();
+            newOther.show();
+    }
+
+    // if statement that shows the workshop screen when selected by the combo box
+    else if(optionSelected == "Executive Board Meeting"){
+
+        // centers the intramural event Screen
+        newExecutive.setGeometry(
+            QStyle::alignedRect(
+                        Qt::LeftToRight,
+                        Qt::AlignCenter,
+                        newExecutive.size(),
+                        qApp->desktop()->availableGeometry()
+                )
+            );
+
+            //this->hide();
+            newExecutive.show();
+    }
+
     }
 
 
