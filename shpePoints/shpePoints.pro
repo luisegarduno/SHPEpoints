@@ -17,6 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     general_meeting.cpp \
+    intramural_event.cpp \
     main.cpp \
     mainmenu.cpp \
     study_hours.cpp \
@@ -24,12 +25,14 @@ SOURCES += \
 
 HEADERS += \
     general_meeting.h \
+    intramural_event.h \
     mainmenu.h \
     study_hours.h \
     volunteering.h
 
 FORMS += \
     general_meeting.ui \
+    intramural_event.ui \
     mainmenu.ui \
     study_hours.ui \
     volunteering.ui

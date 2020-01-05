@@ -72,12 +72,12 @@ void MainMenu::on_pushButton_clicked(){
     // if statement that shows the Volunteering screen when selected by the combo box
     else if(optionSelected == "Volunteering"){
 
-        // centers the Study Hours Screen
+        // centers the Volunteering Screen
         newVolunteering.setGeometry(
             QStyle::alignedRect(
                         Qt::LeftToRight,
                         Qt::AlignCenter,
-                        newMeeting.size(),
+                        newVolunteering.size(),
                         qApp->desktop()->availableGeometry()
             )
         );
@@ -87,7 +87,7 @@ void MainMenu::on_pushButton_clicked(){
     }
 
 
-    // if statement that shows the volunteering screen when selected by the combo box
+    // if statement that shows the study hours screen when selected by the combo box
     else if(optionSelected == "Study Hours"){
 
         // centers the Study Hours Screen
@@ -95,13 +95,40 @@ void MainMenu::on_pushButton_clicked(){
             QStyle::alignedRect(
                         Qt::LeftToRight,
                         Qt::AlignCenter,
-                        newMeeting.size(),
+                        newHours.size(),
                         qApp->desktop()->availableGeometry()
                 )
             );
 
             //this->hide();
             newHours.show();
+
+    }
+
+    else if (optionSelected == "Select Event"){
+            QString noFile = "No event was selected:\n";
+            QString tryAgain = "Please select appropriate event";
+            QMessageBox::warning(this,"Error",noFile + tryAgain);
+    }
+
+    // if statement that shows the intramural event screen when selected by the combo box
+    else if(optionSelected == "Intramural Event"){
+
+        // centers the intramural event Screen
+        newIntramural.setGeometry(
+            QStyle::alignedRect(
+                        Qt::LeftToRight,
+                        Qt::AlignCenter,
+                        newIntramural.size(),
+                        qApp->desktop()->availableGeometry()
+                )
+            );
+
+            //this->hide();
+            newIntramural.show();
+
+    }
+
     }
 
 
@@ -121,4 +148,4 @@ void MainMenu::on_pushButton_clicked(){
         QMessageBox::warning(this,"Error",noFile + tryAgain);
     }
     */
-}
+
