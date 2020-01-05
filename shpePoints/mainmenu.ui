@@ -51,7 +51,7 @@
      <font>
       <pointsize>23</pointsize>
       <weight>75</weight>
-      <italic>true</italic>
+      <italic>false</italic>
       <bold>true</bold>
       <underline>false</underline>
      </font>
@@ -72,7 +72,7 @@
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+       <item alignment="Qt::AlignHCenter">
         <widget class="QComboBox" name="eventSelection_comboBox">
          <property name="minimumSize">
           <size>
@@ -154,7 +154,7 @@
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+         <item>
           <widget class="QComboBox" name="shpePillar_comboBox">
            <property name="minimumSize">
             <size>
@@ -210,9 +210,9 @@
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>200</y>
+      <y>180</y>
       <width>205</width>
-      <height>99</height>
+      <height>161</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -222,8 +222,9 @@
         <widget class="QLabel" name="date_Label">
          <property name="font">
           <font>
+           <pointsize>10</pointsize>
            <weight>75</weight>
-           <italic>true</italic>
+           <italic>false</italic>
            <bold>true</bold>
           </font>
          </property>
@@ -232,29 +233,43 @@
          </property>
         </widget>
        </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_4">
        <item>
-        <layout class="QVBoxLayout" name="verticalLayout_5">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item alignment="Qt::AlignTop">
+          <widget class="QDateEdit" name="dateInput_Edit">
+           <property name="dateTime">
+            <datetime>
+             <hour>0</hour>
+             <minute>0</minute>
+             <second>0</second>
+             <year>2020</year>
+             <month>8</month>
+             <day>1</day>
+            </datetime>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+          <widget class="QLabel" name="user_label">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Username:</string>
+           </property>
+          </widget>
+         </item>
          <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_3">
-           <item>
-            <widget class="QDateEdit" name="dateInput_Edit">
-             <property name="dateTime">
-              <datetime>
-               <hour>0</hour>
-               <minute>0</minute>
-               <second>0</second>
-               <year>2020</year>
-               <month>8</month>
-               <day>1</day>
-              </datetime>
-             </property>
-            </widget>
-           </item>
-          </layout>
+          <widget class="QLineEdit" name="lineEdit"/>
          </item>
         </layout>
        </item>
@@ -288,48 +303,11 @@
      <string/>
     </property>
    </widget>
-   <widget class="QWidget" name="verticalLayoutWidget_7">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>270</y>
-      <width>160</width>
-      <height>88</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_7">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_8">
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout_9">
-         <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
-          <widget class="QLabel" name="user_label">
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <italic>true</italic>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>Username:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit"/>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>250</y>
+      <x>370</x>
+      <y>270</y>
       <width>170</width>
       <height>48</height>
      </rect>
@@ -343,7 +321,6 @@
    <zorder>verticalLayoutWidget</zorder>
    <zorder>verticalLayoutWidget_3</zorder>
    <zorder>picLabel</zorder>
-   <zorder>verticalLayoutWidget_7</zorder>
    <zorder>pushButton</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -352,7 +329,7 @@
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>39</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

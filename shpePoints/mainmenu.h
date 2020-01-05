@@ -1,17 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include <QFileDialog>
-#include <QMessageBox>
-#include <QDir>
-#include <QDialog>
-#include <QString>
-#include <experimental/filesystem>
-#include <QMainWindow>
-#include <QPixmap>
-#include <string>
+
+#include "general_meeting.h"
 
 using std::string;
-
 
 namespace filesysten = std::experimental::filesystem;
 QT_BEGIN_NAMESPACE
@@ -26,12 +18,15 @@ class MainMenu : public QMainWindow{
 
     public:
         MainMenu(QWidget *parent = nullptr);
+
         ~MainMenu();
 
 private slots:
         void on_pushButton_clicked();
 
 private:
+        general_meeting newMeeting;
+
         Ui::MainWindow *ui;
 };
 

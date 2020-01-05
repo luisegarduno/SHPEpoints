@@ -1,5 +1,8 @@
 #include "mainmenu.h"
 #include "ui_mainmenu.h"
+#include <QStyle>
+#include <QDesktopWidget>
+#include <QApplication>
 
 MainMenu::MainMenu(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWindow){
     ui->setupUi(this);
@@ -45,8 +48,24 @@ MainMenu::~MainMenu(){
 }
 
 
-void MainMenu::on_pushButton_clicked()
-{
+void MainMenu::on_pushButton_clicked(){
+    // centers the General Meeting Screen
+    newMeeting.setGeometry(
+        QStyle::alignedRect(
+                    Qt::LeftToRight,
+                    Qt::AlignCenter,
+                    newMeeting.size(),
+                    qApp->desktop()->availableGeometry()
+        )
+    );
+    // if statement that shows the General Meeting screen when selected by the combo box
+    QString optionSelected = ui->eventSelection_comboBox->currentText();
+    if(optionSelected == "General Meeting"){
+        //this->hide();
+        newMeeting.show();
+    }
+
+    /*
     QString file_name;
     // opens local file directory, user is able to navigate to select desired folder
     file_name = QFileDialog::getExistingDirectory(this, "Open Folder", QDir::homePath());
@@ -60,4 +79,5 @@ void MainMenu::on_pushButton_clicked()
         QString tryAgain = "Please select valid path to a folder";
         QMessageBox::warning(this,"Error",noFile + tryAgain);
     }
+    */
 }
