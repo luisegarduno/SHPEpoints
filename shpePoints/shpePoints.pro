@@ -18,15 +18,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     general_meeting.cpp \
     main.cpp \
-    mainmenu.cpp
+    mainmenu.cpp \
+    study_hours.cpp
 
 HEADERS += \
     general_meeting.h \
-    mainmenu.h
+    mainmenu.h \
+    study_hours.h
 
 FORMS += \
     general_meeting.ui \
-    mainmenu.ui
+    mainmenu.ui \
+    study_hours.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

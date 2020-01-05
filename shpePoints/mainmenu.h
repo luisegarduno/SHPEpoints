@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include "general_meeting.h"
+#include "study_hours.h"
 
 using std::string;
 
@@ -26,6 +27,8 @@ private slots:
 
 private:
         general_meeting newMeeting;
+
+        study_hours newHours;
 
         Ui::MainWindow *ui;
 };

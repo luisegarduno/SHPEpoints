@@ -49,21 +49,44 @@ MainMenu::~MainMenu(){
 
 
 void MainMenu::on_pushButton_clicked(){
-    // centers the General Meeting Screen
-    newMeeting.setGeometry(
-        QStyle::alignedRect(
-                    Qt::LeftToRight,
-                    Qt::AlignCenter,
-                    newMeeting.size(),
-                    qApp->desktop()->availableGeometry()
-        )
-    );
+
     // if statement that shows the General Meeting screen when selected by the combo box
     QString optionSelected = ui->eventSelection_comboBox->currentText();
+
     if(optionSelected == "General Meeting"){
+        // centers the General Meeting Screen
+        newMeeting.setGeometry(
+            QStyle::alignedRect(
+                        Qt::LeftToRight,
+                        Qt::AlignCenter,
+                        newMeeting.size(),
+                        qApp->desktop()->availableGeometry()
+            )
+        );
+
         //this->hide();
         newMeeting.show();
     }
+
+
+    // if statement that shows the General Meeting screen when selected by the combo box
+    else if(optionSelected == "Study Hours"){
+
+        // centers the Study Hours Screen
+        newHours.setGeometry(
+            QStyle::alignedRect(
+                        Qt::LeftToRight,
+                        Qt::AlignCenter,
+                        newMeeting.size(),
+                        qApp->desktop()->availableGeometry()
+            )
+        );
+
+        //this->hide();
+        newHours.show();
+    }
+
+
 
     /*
     QString file_name;
