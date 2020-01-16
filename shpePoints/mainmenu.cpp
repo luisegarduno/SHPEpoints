@@ -198,6 +198,61 @@ void MainMenu::on_pushButton_clicked(){
             newExecutive.show();
     }
 
+    // if statement that shows the workshop screen when selected by the combo box
+    else if(optionSelected == "Social Event"){
+
+        // centers the intramural event Screen
+        newSEvent.setGeometry(
+            QStyle::alignedRect(
+                        Qt::LeftToRight,
+                        Qt::AlignCenter,
+                        newSEvent.size(),
+                        qApp->desktop()->availableGeometry()
+                )
+            );
+
+            //this->hide();
+            newSEvent.show();
+    }
+
+
+    // if statement that shows the workshop screen when selected by the combo box
+    else if(optionSelected == "MentorSHPE"){
+
+        // centers the intramural event Screen
+        newMentor.setGeometry(
+            QStyle::alignedRect(
+                        Qt::LeftToRight,
+                        Qt::AlignCenter,
+                        newMentor.size(),
+                        qApp->desktop()->availableGeometry()
+                )
+            );
+
+            //this->hide();
+            newMentor.show();
+    }
+
+
+    // if statement that shows the workshop screen when selected by the combo box
+    else if(optionSelected == "Committee Meeting"){
+
+        // centers the intramural event Screen
+        newCommittee.setGeometry(
+            QStyle::alignedRect(
+                        Qt::LeftToRight,
+                        Qt::AlignCenter,
+                        newCommittee.size(),
+                        qApp->desktop()->availableGeometry()
+                )
+            );
+
+            //this->hide();
+            newCommittee.show();
+    }
+
+
+
     }
 
 

@@ -9,6 +9,10 @@
 #include "social_media.h"
 #include "other.h"
 #include "executive_meeting.h"
+#include "social_event.h"
+#include "mentorshpe.h"
+#include "committee_meeting.h"
+
 
 using std::string;
 
@@ -47,6 +51,12 @@ private:
         other newOther;
 
         executive_meeting newExecutive;
+
+        social_event newSEvent;
+
+        mentorshpe newMentor;
+
+        committee_meeting newCommittee;
 
         Ui::MainWindow *ui;
 };
